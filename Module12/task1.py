@@ -11,7 +11,7 @@ try:
     response = requests.get(request)
     print(response.status_code)
     if response.ok:
-        ##print(json.dumps(response, indent=2))
+
         tv_shows = response.json()
         for tv_show in tv_shows:
             print(tv_show["show"]["name"])
